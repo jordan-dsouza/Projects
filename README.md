@@ -1,3 +1,5 @@
+**IF UNABLE TO PREVIEW CODE, PASTE GITHUB PAGE URL HERE: "https://nbviewer.jupyter.org/"**
+
 #Projects
 1. **Loan approval:**
    This project predicts whether a loan will be approved using 3 machine learning models: SVM, Logistic Regression and Random forest.\
