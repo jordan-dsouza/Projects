@@ -24,4 +24,13 @@ We finally come to the most important part.
 My model is a Sequential Model consisting of:
 1. **Input**: <br>Shape (128,128,1)</br>
 2. **Conv2D**: <br>Convolution layer extracts spatial features of an image with help of a kernel or filter. My model has two of these layers, first with 32 kernels and second with 64 kernels.</br>
-3. 
+3. **Batch Normalization**: <br>Batch Normalization is a technique used in training neural networks to improve their stability and speed of convergence by normalizing the input to each layer.
+   My model has two such layers. </br>
+4. **MaxPooling2D**:<br>Reduces spatial dimensions while retaining important features. In my model, it selects maximum pixel value using a (2x2) filter. My model has two such layers.</br>
+5. **Dropout**:<br> Randomly zeroes out a certain percentage of neurons during training to prevent overfitting and improve the model's generalization ability. This is achieved by setting the output of randomly selected neurons to zero with a specified probability (dropout rate). For input the dropout rate is 0.3 and for dense layer it is 0.5.</br>
+6. **Flatten**:<br>Flattens inputs.</br>
+7. **Dense**:<br>Deeply connected layer. Every neuron is connected to every other neuron in previous layer so droput rate is set to 50%.</br>
+## Model Compiler:
+1. My model is compiled with the **ADAM** (short for Adaptive Moment Estimation) optimizer which is highly effective, especially when working with large datasets and complex models, because it is memory-efficient and adapts the learning rate dynamically for each parameter.
+2. Loss is **Sparse Categorical Cross Entropy** which is designed for cases where the target labels are not one-hot encoded.
+3. Metric is **accuracy**.
