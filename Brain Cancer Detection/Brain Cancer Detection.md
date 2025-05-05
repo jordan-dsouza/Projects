@@ -48,9 +48,12 @@ My model is a Sequential Model consisting of:
 ## Pretrained Model MobileNetV2:
 1. Input shape is (128,128,3). Default channels are 3 (RGB), so I have to resize my images and add 3 channels.
 2. Model training is similar to my model with same parameters.
-3. Test accuracy is 94.06%.
+3. Some layers are frozen so as to not train it again and save time.
+4. Test accuracy is 94.06%.
 
 ## Model Accuracy Improvement:
 <br>There are various ways to improve model accuracy. I haven't followed them all due to time, memory and resource constraints.</br>
-1. Adding more layers including Dropout and Batch Normalization (Explained why in the [Model](#the-model) section). Training time increased to 33 min.
-2. 
+1. Adding more layers including Dense, Dropout and Batch Normalization (Explained why in the [Model](#model) section). Training time increased to 33 min.
+2. Image size could be increased to (224,224) for more accuracy.
+3. K fold cross validation can find the best parameters by dividing the dataset into "k" folds and training/testing the model. If k=5 (4 train, 1 test), training time x 5.
+4. Unfreeze the frozen layers of the pretrained model.
