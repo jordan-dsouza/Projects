@@ -16,5 +16,6 @@ ENDPOINTS:
 http://localhost:9090/list_tables
 
 http://localhost:9090/get_table_details?table_name=CapBudgWS
-
-http://localhost:9090/row_sum?table_name=CapBudgWS&row_name=Tax Credit (if any )="
+<br>
+http://localhost:9090/row_sum?table_name=CapBudgWS&row_name=Tax Credit (if any )=
+<br/>
