@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "c13f2c96-8db6-4a2f-9161-9305dae2e89e",
+		"name": "IRIS_Assign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11936470"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/list_tables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/list_tables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"list_tables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/get_table_details?table_name=CapBudgWS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/get_table_details?table_name=CapBudgWS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"get_table_details"
+					],
+					"query": [
+						{
+							"key": "table_name",
+							"value": "CapBudgWS"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/row_sum?table_name=CapBudgWS&row_name=Tax Credit (if any )=",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/row_sum?table_name=CapBudgWS&row_name=Tax Credit (if any )=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"row_sum"
+					],
+					"query": [
+						{
+							"key": "table_name",
+							"value": "CapBudgWS"
+						},
+						{
+							"key": "row_name",
+							"value": "Tax Credit (if any )="
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
