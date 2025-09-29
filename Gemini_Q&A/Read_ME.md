@@ -1,4 +1,4 @@
-**Libraries:**
+##**Libraries:**
 1. !pip install --upgrade --quiet langchain-google-genai
 
 * Purpose: Installs the LangChain integration for Google's Gemini API.
@@ -38,3 +38,17 @@
 
 * Purpose: To wrap individual chunks of text with metadata (e.g., page number, source).
 * Use: Enables _easier tracking_ of where a retrieved chunk came from (for citation or explanation).
+
+
+##**Code:**
+1. PdfReader reads pdf and extracts text.
+2. *Chunking* breaks down complex information into small chunks to improve memory with maximum 1500 tokens.
+3. A *Question* is asked using a *Prompt* and *Context*. '*.invoke*' allows to send input and receive response.
+4. Paper is summarized and trimmed down to 10000 words.
+5. For [RAG](#RAG), document is split and stored with embeddings in vector database.
+6. Using similarity search, top k contextual chunks are retrieved.
+
+
+##**Definitions:**
+1. **#RAG**: Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response.
+2. 
